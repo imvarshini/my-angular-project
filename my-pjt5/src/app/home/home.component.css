@@ -1,0 +1,25 @@
+.m1{
+    background-color: floralwhite;   
+     height: 500px;
+     
+     width: 100%;
+     border: 1px solid wheat;
+}
+.h1{
+    color: rgb(154, 97, 182);
+}
+.h4{
+    color: darkturquoise;
+
+}
+.one{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background-color: thistle;
+}
+img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}

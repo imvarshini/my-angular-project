@@ -1,0 +1,64 @@
+<h1 appHighlight>Hi</h1>
+<h1 [ngStyle]="{'color':'tomato'}">{{'UPPER' | lowercase}}</h1>
+<h1 [ngStyle]="{'background-color':bgcolor==='black'?'black':'gray'}">{{'lower' | uppercase}}</h1>
+<h1  [ngClass]="'changecolor'">{{'123' | currency}}</h1>
+<h1 [ngClass]="stylecolor">{{dateExample | date}}</h1>
+<h1>{{'0.5' | percent}}</h1>
+<h1>{{'********************************'}}</h1>
+<h1>{{'123' | currency:'GBP'}}</h1>
+<h1 [ngClass]="stylecolor">{{dateExample | date:'long'}}</h1>
+<h1 [ngClass]="stylecolor">{{dateExample | date:'short'}}</h1>
+<h1 [ngClass]="stylecolor">{{dateExample | date:'dd/MM/yy'}}</h1>
+<h1 [ngClass]="'changecolor'">{{'0.512' | percent:'3.2-3'}}</h1>
+
+<h1>{{'********************************'}}</h1>
+<h1 [ngClass]="'changecolor'">{{dateExample | date|uppercase}}</h1>
+<h1 [ngClass]="'changecolor'">{{'123' | currency:'YEN'|lowercase}}</h1>
+<h1>{{'********************************'}}</h1>
+<app-login></app-login>
+
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+  <label for="fname">Fname</label>
+  <input type="text" id="fname" name="fname" [(ngModel)]="fname">
+ <br>
+  <label for="lname">Lname</label>
+  <input type="text" id="lname" name="lname" [(ngModel)]="lname">
+ <br>
+ <label for="age">age</label>
+  <input type="text" id="age" name="age" [(ngModel)]="age">
+ <br>
+ <label for="read" >Do You Exercise at Home?</label>
+ 
+  <input type="radio" id="Yes" name="exercise" value="Yes" [(ngModel)]="yes" >
+  <label for="choose">Yes</label>
+  <input type="radio" id="No" name="exercise" value="No"  [(ngModel)]="no">
+  <label for="choose">No</label>
+ 
+  
+  
+  <label for="movies">What genre of movies do you like?</label><br>
+  <select id="movies" name="movies" size="1" [(ngModel)]="movies">
+  <option value="horror">Horror</option>
+  <option value="horror">Comedy</option>
+  <option value="horror">Herioc</option>
+  <option value="horror">Romantic</option>
+  </select>
+  <br><br>
+
+  <input type="checkbox" name="terms" id="terms" [(ngModel)]="terms" required>I accept the terms and condition
+  <br>
+  <button type="submit" [disabled]="!myForm.valid">Submit</button>
+  <button (click)="resetForm(myForm)">Reset</button>
+</form>
+
+<h1>{{'********************************'}}</h1>
+
+<h1 style="color:red">Hello</h1>
+<h1 [ngStyle]="{'color':textcolor}">Hi</h1>
+<h1 [ngStyle]="{'color':'tomato'}">Bye</h1>
+<h1 [ngStyle]="{'background-color':bgcolor==='black'?'black':'gray'}">Good Morning</h1>
+<h1 [ngClass]="'changecolor'">Hurray</h1>
+<h1 [ngClass]="'changecolor bgcolor'">Yippi</h1>
+<h1 [ngClass]="stylecolor">ahoy</h1>
+<h1 [ngClass]="backgroundcolor==='font'?'bgcolor':'changecolor'">Mister</h1>
+<h1 [ngStyle]="{'font-size':'100px'}">hi</h1>

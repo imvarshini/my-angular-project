@@ -1,0 +1,19 @@
+.changecolor{
+    color:hotpink;
+    border-radius: 100px;
+    width:200px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+}
+.bgcolor{
+    background-color:khaki;
+    
+}
+.newFont{
+    background-color:khaki;
+    color:lightseagreen;
+    
+}

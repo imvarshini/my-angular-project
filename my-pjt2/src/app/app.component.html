@@ -1,0 +1,30 @@
+<h1 *ngIf="day else elseBlock">Hello</h1>
+
+<ng-template #elseBlock>
+    <h1>Bye</h1>
+</ng-template>
+<h1 *ngIf="LoggedIn=='hi'; else LoggedOut">Welcome Aboard</h1>
+<ng-template #LoggedOut>
+    <h1>You Have Logged Out Successfully</h1>
+</ng-template>
+
+<app-user-list></app-user-list>
+
+<input type="text" value={{name}} disabled={{false}}>
+<input type="text" [value]="name" [disabled]="disabledBox">
+<button (click)="enableInput()">Enable Me</button>
+<input type="placeholder" [value]="newPlaceHolder" [disabled]="newPlaceHolder">
+<button (click)="changenewPlaceHolder()">click Me</button>
+<h4 *ngFor="let name of names">
+    {{name.fname}}
+    {{name.age}}
+</h4>
+
+<div *ngForm="let id of ids">
+    Id is {{id}}
+    <div ngSwitch="{{id%2}}">
+      <div *ngSwitchCase="'0'" [ngClass]="'one'">I am Even.</div>
+      <div *ngSwitchCase="'1'" [ngClass]="'two'">I am Odd.</div>
+      <div *ngSwitchDefault>Nothing Found.</div>
+    </div> 	
+  </div>  

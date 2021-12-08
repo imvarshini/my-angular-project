@@ -1,0 +1,16 @@
+.navbar{
+    border:1px solid lightblue;
+    height:50px;
+    width:100%;
+    background-color: lightblue;
+    text-decoration:none;
+    
+display: flex;
+    justify-content: space-around;
+    color: darkblue;
+}
+.navbar navbar-light bg-light{
+    display: flex;
+    flex-direction: row;
+    color: darkblue;
+}

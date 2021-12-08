@@ -1,0 +1,12 @@
+.box{
+    width: 500px;
+    height: 400px;
+    margin-left: 400px;
+    background-color: aliceblue;
+    display:flex;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-content: center;
+}
